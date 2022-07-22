@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REDACTR</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REDACTR</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <div class="container">
-        <h1>REDACTR</h1>
-        <form action="">
-            <div class="input-area">
-                <div class="full-text">
-                    <label for="text"><b>ENTER INFORMATION</b></label>
-                    <textarea name="text" id="text" rows="18" placeholder="Enter your full text here"></textarea>
-                </div>
-                <div class="redact">
-                    <label for="scramble"><b>Words to scramble </b><i>(separated by commas)</i></label>
-                    <textarea name="scramble" id="scramble" rows="10" placeholder="Specify words to scramble"></textarea>
-                    <br>
-                    <label for="symbol"><b>Symbol</b></label>
-                    <input type="text" name="symbol" id="symbol" placeholder="Enter any symbol">
-                    <button id="button" type="submit">REDACT NOW</button>
-                </div>
-            </div>
-        </form>
-        
-        <div class="result">
-            <h3>RESULT</h3>
-            <p>Words Count: </p>
-            <p>Scrambled words Count: </p>
-        </div>
-    </div>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+
+  <div class="container">
+    <h1>REDACTR</h1>
+    <form action="">
+      <div class="input-area">
+        <div class="full-text">
+          <label for="text"><b>ENTER INFORMATION</b></label>
+          <textarea name="text" id="text" rows="18" placeholder="Enter your full text here"></textarea>
+        </div>
+        <div class="redact">
+          <label for="scramble"><b>Words to scramble </b><i>(separated by commas)</i></label>
+          <textarea name="scramble" id="scramble" rows="10" placeholder="Specify words to scramble"></textarea>
+          <br>
+          <label for="symbol"><b>Symbol</b></label>
+          <input type="text" name="symbol" id="symbol" placeholder="Enter any symbol">
+          <button id="button" type="submit">REDACT NOW</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="result">
+      <h3>RESULT</h3>
+      <p>Words Count: </p>
+      <p>Scrambled words Count: </p>
+    </div>
+  </div>
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
