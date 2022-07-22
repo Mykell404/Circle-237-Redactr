@@ -1,17 +1,25 @@
 function startApp() {
-    // Your entire app should not necessarily be coded inside this 
-    // single function (though there's no penalty for that), 
-    // so create and use/call additional functions from here
-  
-    // pls remove the below and make some magic in here!
-    console.log('make magic in here!');
-  
-    const header = document.querySelector('h2');
-    if(header) {
-      header.textContent = 'make some magic here!!';
-    }
-  };
-  
-  // ======= DO NOT EDIT ============== //
-  export default startApp;
+  let redactBtn = document.getElementById("button");
+  // This function splits the words and returns an array
+  function sortWords(words) {
+    let newWords = words.split(",");
+    return newWords;
+  }
+
+  function redact(event) {
+    event.preventDefault();
+    let contentToBeScrambled = document.getElementById("text").value;
+    let wordsToBeScrambled = document.getElementById("scramble").value;
+    let symbol = document.getElementById("symbol");
+
+    let sortedWord = sortWords(wordsToBeScrambled);
+
+    console.log(sortedWord);
+  }
+
+  redactBtn.addEventListener("click", redact);
+};
+
+// ======= DO NOT EDIT ============== //
+export default startApp;
   // ======= EEND DO NOT EDIT ========= //
