@@ -42,6 +42,17 @@ function startApp(e) {
     // pass the sorted words, content and symbol then await the result
     let result = await redactWords(sortedWord, contentToBeScrambled, symbol)
 
+    let totalWordCount = contentToBeScrambled.length;
+    let scrambledWordCount = result.length;
+
+    let wordCountNode = document.getElementById("word-count");
+    let scrambledWordCountNode = document.getElementById(
+      "scrambled-word-count"
+    );
+
+    wordCountNode.innerText = `Words Count: ${totalWordCount}`;
+    scrambledWordCountNode.innerText = `Scrambled words Count: ${scrambledWordCount}`;
+
     // console.log the result
     console.log(result);
   }
