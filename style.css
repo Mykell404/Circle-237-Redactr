@@ -1,0 +1,111 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #FFDAB9,  #D8BFD8);
+}
+.container{
+    padding: 10px;
+  width:100%;
+  margin: 10px auto;
+}
+h1, h3{
+    color: red;
+    margin-bottom: 5px;
+    text-align: center;
+}
+label{
+    font-size: small;
+    float: left;
+  padding:10px;
+}
+
+.input-area {
+    display: grid;
+    grid-template: 150px / 69% 29%;
+    grid-gap: 30px;
+    padding: 10px;
+  }
+  
+  .input-area > div {
+    padding: 20px 0;
+    font-size: 30px;
+    width: 100%;
+}
+.full-text, .redact{
+    margin-bottom: 30px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 20px;
+    outline: 0;
+    border: 1px solid red;
+    color: black;
+    background: transparent;
+  overflow: hidden;
+    font-size: 15px;
+	border-radius: 10px;
+}
+button{
+	background-color:red;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+button:hover{
+	background-color: rgb(119, 45, 45);
+	border: 2px solid white;
+	cursor: pointer;
+}
+.result{
+    margin-top: 250px;
+}
+.result p {
+  padding:5px;
+}
+
+
+@media (max-width:768px) {
+    .input-area{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .result{
+        margin-top: 11em;
+      font-size:20px;
+    }
+   .input-area > div{
+        width: 100%;
+        height: 6rem;
+        
+    }
+  #text {
+    height: 6rem;
+}
+  input, textarea{
+    max-width: 100%;
+    height:50%;
+    padding: 20px;
+    
+}
+    label{
+        font-size: 20px;
+    }
+  button{
+    margin-top: 20px;
+  }
+}
