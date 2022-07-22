@@ -1,3 +1,5 @@
+import validateForm from "./validation.mjs";
+
 function startApp(e) {
   // Get the Form Element
   let redactForm = document.getElementById("redact-form");
@@ -27,6 +29,8 @@ function startApp(e) {
   async function redact(event) {
     // Prevent the default action of the form ie the reloading
     event.preventDefault();
+    // Apply Basic Validation
+    validateForm()
     // Get value from the text input field
     let contentToBeScrambled = redactForm.text.value;
     // Get value from the scramble input field
